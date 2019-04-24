@@ -111,6 +111,13 @@ int main()
             
 			}		
       } 
+      
+      printf("\n\nTotal Waiting Time : %d",wait_time);
+      float avg_wait = wait_time/(float)limit;
+      printf("\nAvaerage Waiting Time : %.2f",avg_wait);
+      printf("\nTotal Turnaround Time : %d",turnaround_time);
+      float avg_turn = turnaround_time/(float)limit;
+      printf("\nAverage Turnaround Time : %.2f",avg_turn);
       return 0; 
 }
 
