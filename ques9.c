@@ -28,7 +28,7 @@ int main()
 	   
       printf("\nEnter the Time Quantum:"); 
       scanf("%d", &time_quantum); 
-      printf("\nProcess ID\t\tBurst Time\t Turnaround Time\t Waiting Time\t Priority\n");
+      printf("\nProcess ID\tBurst Time\t Turnaround Time\t Waiting Time\t Priority\n");
       for(total = 0, i = 0; x != 0;) 
       { 
 
@@ -89,7 +89,7 @@ int main()
 
             if(temp[i] == 0 && counter == 1) 
             { 
-                  x--;
+                  x--; 
                   printf("\nProcess[%d]\t\t%d\t\t %d\t\t %d\t\t%d", p[i], b_time[i], total - a_time[i], total - a_time[i] - b_time[i],prio[i]);
                   wait_time = wait_time + total - a_time[i] - b_time[i]; 
                   turnaround_time = turnaround_time + total - a_time[i]; 
